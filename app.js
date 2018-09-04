@@ -28,7 +28,7 @@ function addToJobList(job)   {
 
 //Make a new job card using user text inputs on the page
 function jobFromInputInfo(e)   {
-    let addJobObject = {'title': document.querySelector('#titleInput').value, 'pay': document.querySelector('#pay').value, 'description': document.querySelector('#description').value};
-    addToJobList(addJobObject);
+    let newJobObject = {'title': document.querySelector('#titleInput').value, 'pay': document.querySelector('#pay').value, 'description': document.querySelector('#description').value};
+    addToJobList(newJobObject);
     e.preventDefault();
 };
