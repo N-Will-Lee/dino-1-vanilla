@@ -20,18 +20,19 @@
         <h3>Add a Job</h3>
         <form class="job-form">
           <label for="title">Title</label>
-          <input type="text" name="title">
+          <input id='titleInput' type="text" name="title">
           <label for="pay">Compensation</label>
-          <input type="text" name="pay">
+          <input id='pay' type="text" name="pay">
           <label for="description">Description</label>
-          <textarea name="description" rows="8" cols="40"></textarea>
-          <input type="submit" name="submit" value="Submit" />
+          <textarea id='description' name="description" rows="8" cols="40"></textarea>
+          <input id='submit' type="submit" name="submit" value="Submit" />
         </form>
       </aside>
     </main>
     <footer>
       <small>Copyright 2018</small>
     </footer>
-    <script src="listings.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" integrity="sha256-lrZTgsdM1iVdRigETFOU8u8/BmLX1ysQ8bzrULbuVFU=" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
