@@ -16,17 +16,15 @@ function addToJobList(job)   {
     newJob.innerText = job.title;
     let pay = document.createElement('p');
     pay.innerHTML = '<small>' + job.pay + '</small>';
-    newJob.appendChild(pay);
     let desc = document.createElement('p');
     desc.innerText = job.description;
-    newJob.appendChild(desc);
     let interestedDinosaurs = document.createElement('p');
     interestedDinosaurs.innerHTML = '<small></small>';
-    newJob.appendChild(interestedDinosaurs);
+    newJob.append(pay, desc, interestedDinosaurs);
     jobList.appendChild(newJob);
 };
 
-//Make a new job card using user text inputs on the page
+//Make a new object using user inputs on the page. pass the object to the job card creating function
 function jobFromInputInfo(e)   {
     let newJobObject = {'title': document.querySelector('#titleInput').value, 'pay': document.querySelector('#pay').value, 'description': document.querySelector('#description').value};
     addToJobList(newJobObject);
